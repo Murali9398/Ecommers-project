@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Home page</title>
+    <style>
+        .banner{
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding-left: 10px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .displaypopup{
+            visibility: hidden;
+        }
+        .display:hover .displaypopup{
+            visibility: visible;
+        }
+        body{
+            overflow-y: hidden;
+            overflow-x: hidden;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <header class="banner">
+        <div>
+            <img src="./logo.png" alt="A">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">My Account</a>
+            <a href="#">Compare</a>
+            <a href="#">Login</a>
+            
+        </div>
+        <div style="margin-left: 380px; margin-top:20px">
+            <input  type="search" placeholder="Search for Items" aria-label="Search" width="200px" height="50px" >
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div> 
+
+    </header>
+    <section class="banner" style="margin-top: 100px;margin-left: 100px">
+        <div >
+            <h6>Hot Promotion</h6>
+            <h2>Fashion Trending<h1>Great Collection</h1></h2>
+            <p> Save more with coupon & up to 20%off</p>
+            <button style="background-color:green;color:white;border-radius: 5px  "> Shop Now</button>
+        </div>
+        <div style="margin-left: 100px;">
+            <img src="./home-img.png" alt="">
+        </div>
+    </section>
+    <section class="banner" style="margin-top: 50px; margin-bottom: 50px">
+        <figure>
+            <img src="./showcase-img-5.jpg" alt="" height="200px" width="200px">
+            <figcaption style="margin-left: 65px;">T-Shirt</figcaption>
+        </figure>
+        <figure>
+            <img src="./showcase-img-8.jpg" alt="" height="200px" width="200px">
+            <figcaption style="margin-left: 65px;">BagsSandal</figcaption>
+            </figure>
+        <figure>
+            <img src="./product-10-2.jpg" alt="" height="200px" width="200px">
+            <figcaption style="margin-left: 65px;">Sandal</figcaption>
+        </figure>
+        <figure>
+            <img src="./showcase-img-4.jpg" alt="" height="200px" width="200px">
+            <figcaption style="margin-left: 65px;"> Scarf Cap</figcaption>
+        </figure>
+        <figure>
+            <img src="./showcase-img-7.jpg" alt="" height="200px" width="200px">
+            <figcaption style="margin-left: 65px;">Shoes</figcaption>
+        </figure>
+        <figure>
+            <img src="./showcase-img-2.jpg" alt="" height="200px" width="200px">
+            <figcaption style="margin-left: 65px;">Pillowcase</figcaption>
+        </figure>
+    </section>
+    <section class="banner" style="margin-bottom: 50px;">
+        <div style="padding-right: 20px; padding-left: 20px">Featured</div>
+        <div style="padding-right: 20px;">Popular</div>
+        <div style="padding-right: 20px;">New Added</div>
+    </section>
+    <section class="grid" style="margin-left:60px">
+        <div >
+            <div>
+                <div style="background-color: palevioletred;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">Hot</div>
+                <div>
+                    <img class="display" src="./product-1-1.jpg" alt="" height="200" width="200">
+                    <span class="displaypopup" style="position: relative; right:150px;">
+                        <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p class="lead">clothing</p>
+                <h5>Colorful Pattren Shirts</h5>
+                <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                <h6 style="color:green">$238.85 <del style="color: dimgray;">$245.0</del></h6>
+            </div>
+        </div>
+       
+    
+        <div>
+            <div style=>
+                <div style="background-color:green;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">Hot</div>
+                <div>
+                    <img class="display" src="./product-2-1.jpg" alt="" height="200" width="200" >
+                    <span  style="position: relative; right:150px;">
+                        <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p class="lead">clothing</p>
+                <h5>Colorful Pattren Shirts</h5>
+                <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                <h6 style="color:green">$238.85 <del style="color: dimgray;">$245.0</del></h6>
+            </div>
+        </div>
+       
+    
+        <div >
+            <div>
+                <div style="background-color: orange;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">Hot</div>
+                <div>
+                    <img class="display" src="./product-3-1.jpg" alt="" height="200" width="200">
+                    <span  style="position: relative; right:150px; ">
+                        <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p class="lead">clothing</p>
+                <h5>Colorful Pattren Shirts</h5>
+                <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                <h6 style="color:green">$238.85 <del style="color: dimgray;">$245.0</del></h6>
+            </div>
+        </div>
+       
+   
+        <div >
+            <div>
+                <div style="background-color: skyblue;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">Hot</div>
+                <div>
+                    <img class="display" src="./product-4-1.jpg" alt="" height="200" width="200" >
+                    <span class=""  style="position: relative; right:150px; ">
+                        <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p class="lead">clothing</p>
+                <h5>Colorful Pattren Shirts</h5>
+                <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                <h6 style="color:green">$238.85 <del style="color: dimgray;">$245.0</del></h6>
+            </div>
+        </div>
+       
+   
+        <div>
+            <div>
+                <div style="background-color: orange;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">-22%</div>
+                <div>
+                    <img class="display" src="./product-5-1.jpg" alt="" height="200" width="200" >
+                    <span  style="position: relative; right:150px; ">
+                        <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                    </span>
+                </div>
+            </div>
+
+
+            <div>
+                <p class="lead">clothing</p>
+                <h5>Colorful Pattren Shirts</h5>
+                <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                <h6 style="color:green">$238.85 <del style="color: dimgray;">$245.0</del></h6>
+            </div>
+        </div>
+       
+    
+        <div>
+            <div>
+                <div style="background-color: palevioletred;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">-22%</div>
+                <div>
+                    <img class="display" src="./product-6-1.jpg" alt="" height="200" width="200" >
+                    <span  style="position: relative; right:150px; ">
+                        <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p class="lead">clothing</p>
+                <h5>Colorful Pattren Shirts</h5>
+                <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                <h6 style="color:green">$238.85 <del style="color: dimgray;">$245.0</del></h6>
+            </div>
+        </div>
+       
+    
+        <div>
+            <div>
+                <div style="background-color:blue;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">-22%</div>
+                <div>
+                    <img class="display" src="./product-7-1.jpg" alt="" height="200" width="200" >
+                    <span  style="position: relative; right:150px;">
+                        <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p class="lead">clothing</p>
+                <h5>Colorful Pattren Shirts</h5>
+                <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                <h6 style="color:green">$238.85 <del style="color: dimgray">$245.0</del></h6>
+            </div>
+        </div>
+       
+   
+        <div>
+            <div>
+                <div style="background-color:darkmagenta;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">-22%</div>
+                <div>
+                    <img class="display" src="./product-8-1.jpg" alt="" height="200" width="200" >`
+                    <span  style="position: relative; right:150px; ">
+                        <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p class="lead">clothing</p>
+                <h5>Colorful Pattren Shirts</h5>
+                <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                <h6 style="color:green">$238.85 <del style="color: dimgray">$245.0</del></h6>
+            </div>
+        </div>
+    </section>
+  <section>
+    <div></div>
+  </section><br><br>
+   
+  <section style="margin-bottom: 100px;">
+    
+            <img src="./deals-1.jpg" alt="" width="600px" height="400px" style="margin-left:20px;margin-bottom:0px;">
+            <img src="./deals-2 (1).png" alt="" width="600px" height="400px" style="margin-left:20px; margin-bottom:0px">
+            <div style="position: relative; bottom: 360px;left:50px">
+                <h2>Deals of the Day</h2>
+                <p class="lead"> Limited quantities</p>
+                <h4>Summer Collection New <br>Mordern Design</h4>
+                <h5>$139.00 <del>$160.99</del></h5>
+                <p>Hurry Up! Offer End in:</p>
+                <div class="banner">
+                    <div style="background-color:green;color: white; padding:13px ;margin-right:3px ">02</div>
+                    :
+                    <div style="background-color:green;color: white; padding:13px ;margin-left:3px ;margin-right:3px">22</div>
+                    :
+                    <div style="background-color:green;color: white; padding:13px ;margin-right:3px ;margin-left:3px">57</div>
+                    :
+                    <div style="background-color:green;color: white; padding:13px ;margin-left:3px ">28</div>
+                </div>
+                <div class="banner"  >
+                    <div style="padding-right: 15px;">Days</div>
+                    
+                    <div style="padding-right: 18px;" >Hours</div>
+                
+                    <div style="padding-right: 20px;">Mins</div>
+                    <div >Sec</div>
+                </div>
+                <button>Shop Now</button>
+
+            </div>
+            <div style="position: relative; bottom: 700px;left:680px;margin-bottom:20px">
+                <h2>Deals of the Day</h2>
+                <p class="lead"> Limited quantities</p>
+                <h4>Summer Collection New <br>Mordern Design</h4>
+                <h5>$139.00 <del>$160.99</del></h5>
+                <p>Hurry Up! Offer End in:</p>
+                <div class="banner">
+                    <div style="background-color:green;color: white; padding:13px ;margin-right:3px ">02</div>
+                    :
+                    <div style="background-color:green;color: white; padding:13px ;margin-left:3px ;margin-right:3px">22</div>
+                    :
+                    <div style="background-color:green;color: white; padding:13px ;margin-right:3px ;margin-left:3px">57</div>
+                    :
+                    <div style="background-color:green;color: white; padding:13px ;margin-left:3px ">28</div>
+                </div>
+                <div class="banner" >
+                    <div style="padding-right: 15px;">Days</div>
+                    
+                    <div style="padding-right: 18px;" >Hours</div>
+                
+                    <div style="padding-right: 20px;">Mins</div>
+                    <div >Sec</div>
+                   </div>
+                <button>Shop Now</button>
+            </div>
+         </section>
+           <div style="margin-bottom: 20px;">New Arrivals</div>
+           <section class="grid" style="margin-left:60px; margin: bottom 50pxpx">
+            <div >
+                <div>
+                    <div style="background-color: palevioletred;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">Hot</div>
+                    <div>
+                        <img class="display" src="./product-1-1.jpg" alt="" height="200" width="200">
+                        <span class="displaypopup" style="position: relative; right:150px;">
+                            <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                            <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                            <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <p class="lead">clothing</p>
+                    <h5>Colorful Pattren Shirts</h5>
+                    <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                    <h6 style="color:green">$238.85 <del style="color: dimgray;">$245.0</del></h6>
+                </div>
+            </div>
+           
+        
+            <div>
+                <div style=>
+                    <div style="background-color:green;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">Hot</div>
+                    <div>
+                        <img class="display" src="./product-2-1.jpg" alt="" height="200" width="200" >
+                        <span  style="position: relative; right:150px;">
+                            <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                            <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                            <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <p class="lead">clothing</p>
+                    <h5>Colorful Pattren Shirts</h5>
+                    <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                    <h6 style="color:green">$238.85 <del style="color: dimgray;">$245.0</del></h6>
+                </div>
+            </div>
+           
+        
+            <div >
+                <div>
+                    <div style="background-color: orange;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">Hot</div>
+                    <div>
+                        <img class="display" src="./product-3-1.jpg" alt="" height="200" width="200">
+                        <span  style="position: relative; right:150px; ">
+                            <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                            <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                            <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <p class="lead">clothing</p>
+                    <h5>Colorful Pattren Shirts</h5>
+                    <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                    <h6 style="color:green">$238.85 <del style="color: dimgray;">$245.0</del></h6>
+                </div>
+            </div>
+           
+       
+            <div >
+                <div>
+                    <div style="background-color: skyblue;width:40px;height:20px;font-size:smaller;border-radius:3px;text-align:center">Hot</div>
+                    <div>
+                        <img class="display" src="./product-4-1.jpg" alt="" height="200" width="200" >
+                        <span class=""  style="position: relative; right:150px; ">
+                            <i class="fa-regular fa-eye" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                            <i class="fa-regular fa-heart" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                            <i class="fa-solid fa-shuffle" style="border-radius: 50%;background-color:rgb(147, 212, 147);border:2px solid black;padding:5px"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <p class="lead">clothing</p>
+                    <h5>Colorful Pattren Shirts</h5>
+                    <h6 style="color: Gold;">☆☆☆☆☆</h6>
+                    <h6 style="color:green">$238.85 <del style="color: dimgray;">$245.0</del></h6>
+                </div>
+            </div>
+</body>
+</html>
